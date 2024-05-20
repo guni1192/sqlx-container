@@ -18,13 +18,11 @@ jobs:
           - name: sqlx-cli
             tag: 0.7.3-postgres
             build-args: |
-              RUST_VERSION=1.73
               SQLX_VERSION=0.7.3
               DB=postgres
           - name: sqlx-cli
             tag: 0.7.3-mysql
             build-args: |
-              RUST_VERSION=1.73
               SQLX_VERSION=0.7.3
               DB=mysql
     permissions:
