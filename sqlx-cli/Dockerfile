@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM rust:1.75-slim-bullseye AS build
+FROM rust:1.78-slim-bullseye AS build
 ARG DB=postgres
 ARG SQLX_VERSION=0.7.3
 WORKDIR /app
