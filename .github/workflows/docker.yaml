@@ -16,14 +16,14 @@ jobs:
       matrix:
         images:
           - name: sqlx-cli
-            tag: 0.7.3-postgres
+            tag: 0.7.4-postgres
             build-args: |
-              SQLX_VERSION=0.7.3
+              SQLX_VERSION=0.7.4
               DB=postgres
           - name: sqlx-cli
-            tag: 0.7.3-mysql
+            tag: 0.7.4-mysql
             build-args: |
-              SQLX_VERSION=0.7.3
+              SQLX_VERSION=0.7.4
               DB=mysql
     permissions:
       contents: read
