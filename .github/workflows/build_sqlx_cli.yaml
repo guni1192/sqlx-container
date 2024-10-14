@@ -1,12 +1,18 @@
-name: Container Image
+name: Build sqlx-cli
 
 on:
   push:
     branches:
       - main
+    paths:
+      - "sqlx-cli/**"
+      - "./.github/workflows/build_sqlx_cli.yaml"
   pull_request:
     branches:
       - main
+    paths:
+      - "sqlx-cli/**"
+      - "./.github/workflows/build_sqlx_cli.yaml"
   workflow_dispatch: {}
 
 jobs:
