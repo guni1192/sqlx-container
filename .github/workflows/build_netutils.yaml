@@ -27,7 +27,7 @@ jobs:
       matrix:
         images:
           - name: netutils
-        build-args: {}
+            build-args: {}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
