@@ -27,7 +27,6 @@ jobs:
       matrix:
         images:
           - name: netutils
-            build-args: {}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -58,7 +57,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ${{ matrix.images.name }}
-          build-args: ${{ matrix.images.build-args }}
           push: ${{ github.event.pull_request == false }}
           tags: ${{ steps.meta.outputs.tags }}
  
