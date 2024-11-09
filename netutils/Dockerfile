@@ -9,6 +9,7 @@ RUN apt-get update && \
     iputils-ping \
     openssh-client \
     openssl \
+    tftp-hpa \
     && rm -rf /var/lib/apt/lists/*
 
 RUN curl -sL https://get-gnmic.openconfig.net | bash
